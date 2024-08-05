@@ -1,0 +1,41 @@
+.login-container {
+    width: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 1px solid #cfb8b8;
+    border-radius: 10px;
+    background-color: #ca9ac0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #cfb8b8;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #bd7cbb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ca9ac0;
+  }
+
+  
+  
