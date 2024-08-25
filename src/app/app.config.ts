@@ -5,9 +5,11 @@ import { routes } from './app.routes';
 /**
  * Configuration settings for the application.
  */
-const ApplicationConfig = {
-  // Your configuration settings here
+ const appConfig = {
+  apiUrl: 'https://api.example.com',
+  appTitle: 'My Angular App',
+  // other configurations
 };
-
+export { appConfig };
 
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)];
