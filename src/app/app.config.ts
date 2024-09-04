@@ -1,18 +1,11 @@
-// src/app/app.config.ts
-/**
- *  Configuration settings for the application, including the login page.
- * Contains global settings such as the API URL and titles. 
- */
+import { ApplicationConfig, provideZoneChangeDetection } from "@angular/core";
+import { provideRouter } from "@angular/router";
+import {routes} from './app.routes';
 
- const appConfig = {
-  login: {
-    title: 'Login to Your Account',
-    usernamePlaceholder: 'Enter your username',
-    passwordPlaceholder: 'Enter your password',
-    loginButtonText: 'Login',
-    // Add any other login-specific configurations here
-  },
-  apiUrl: 'https://api.example.com', // Example API URL for authentication
-  appTitle: 'My Angular App',
-  // Other global configurations
+export const appConfig: ApplicationConfig = {
+  providers: [provideZoneChangeDetection({
+    eventCoalescing: true
+  }),
+  provideRouter(routes)
+]
 };
